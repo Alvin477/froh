@@ -46,7 +46,8 @@ export default function Home() {
             href="https://t.me/FrohSol" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-3xl font-normal text-green-700 hover:text-green-600 transition-colors duration-300 social-link"
+            className="text-3xl font-normal social-link"
+            style={{ color: '#39FFA8' }}
           >
             Telegram
           </a>
@@ -54,13 +55,15 @@ export default function Home() {
             href="https://x.com/justafroh?s=21&t=E_s0R05aW5V8nq5zhHnZAQ" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-3xl font-normal text-green-700 hover:text-green-600 transition-colors duration-300 social-link"
+            className="text-3xl font-normal social-link"
+            style={{ color: '#39FFA8' }}
           >
             Twitter
           </a>
           <a 
             href="#" 
-            className="text-3xl font-normal text-green-700 hover:text-green-600 transition-colors duration-300 social-link"
+            className="text-3xl font-normal social-link"
+            style={{ color: '#39FFA8' }}
           >
             Dexscreener
           </a>
