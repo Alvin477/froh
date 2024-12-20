@@ -28,6 +28,7 @@
 .social-link {
   position: relative;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 
 .social-link:hover {
@@ -39,6 +40,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Segoe UI", system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .main-title {
@@ -46,4 +48,11 @@ body {
   font-weight: 900;
   letter-spacing: normal;
   -webkit-text-stroke: 1px black;
+  line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    -webkit-text-stroke: 0.5px black;
+  }
 }

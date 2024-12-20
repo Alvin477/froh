@@ -10,9 +10,14 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white relative overflow-hidden">
       {/* Main Container */}
-      <div className="relative w-full h-screen flex items-center justify-center">
+      <div className="relative w-full h-screen flex flex-col items-center justify-between py-8 px-4">
+        {/* Hero Text */}
+        <div className="text-center z-20 mt-8 md:mt-20">
+          <h1 className="text-5xl md:text-8xl font-black text-black tracking-normal main-title">JUST A FROH<span className="text-6xl md:text-9xl">.</span></h1>
+        </div>
+
         {/* Main Frog Image */}
-        <div className="relative z-10 w-[600px] h-[600px]">
+        <div className="relative z-10 w-[300px] h-[300px] md:w-[600px] md:h-[600px] flex-shrink-0">
           <Image
             src="/img/mainfrog.png"
             alt="FROH Frog"
@@ -23,18 +28,13 @@ export default function Home() {
           />
         </div>
 
-        {/* Hero Text */}
-        <div className="absolute top-20 text-center z-20">
-          <h1 className="text-8xl font-black text-black tracking-normal main-title">JUST A FROH<span className="text-9xl">.</span></h1>
-        </div>
-
         {/* Social Links */}
-        <div className="absolute bottom-12 flex gap-16 z-30">
+        <div className="flex gap-6 md:gap-16 z-30 mb-8">
           <a 
             href="https://t.me/FrohSol" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-3xl font-normal social-link"
+            className="text-xl md:text-3xl font-normal social-link"
             style={{ color: '#39FFA8' }}
           >
             Telegram
@@ -43,14 +43,14 @@ export default function Home() {
             href="https://x.com/justafroh?s=21&t=E_s0R05aW5V8nq5zhHnZAQ" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-3xl font-normal social-link"
+            className="text-xl md:text-3xl font-normal social-link"
             style={{ color: '#39FFA8' }}
           >
             Twitter
           </a>
           <a 
             href="#" 
-            className="text-3xl font-normal social-link"
+            className="text-xl md:text-3xl font-normal social-link"
             style={{ color: '#39FFA8' }}
           >
             Dexscreener
