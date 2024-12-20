@@ -11,25 +11,13 @@ export default function Home() {
     <main className="min-h-screen bg-white relative overflow-hidden">
       {/* Main Container */}
       <div className="relative w-full h-screen flex items-center justify-center">
-        {/* Frog Image */}
-        <div className="relative z-10 w-[500px] h-[500px] frog-container">
+        {/* Main Frog Image */}
+        <div className="relative z-10 w-[600px] h-[600px]">
           <Image
-            src="/img/frog.png"
+            src="/img/mainfrog.png"
             alt="FROH Frog"
-            width={500}
-            height={500}
-            priority
-            className="object-contain"
-          />
-        </div>
-
-        {/* Wave Image */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] animate-wave">
-          <Image
-            src="/img/waves.png"
-            alt="Wave Background"
             width={600}
-            height={200}
+            height={600}
             priority
             className="object-contain"
           />
@@ -37,7 +25,7 @@ export default function Home() {
 
         {/* Hero Text */}
         <div className="absolute top-20 text-center z-20">
-          <h1 className="text-8xl font-bold text-black tracking-normal main-title">JUST A FROH<span className="text-9xl">.</span></h1>
+          <h1 className="text-8xl font-black text-black tracking-normal main-title">JUST A FROH<span className="text-9xl">.</span></h1>
         </div>
 
         {/* Social Links */}
