@@ -10,51 +10,39 @@
 
   /* Desktop Sizes */
   --frog-size-desktop: 500px;
-  --wave-size-desktop: 500px;
   --social-size-desktop: 48px;
 
   /* Desktop Positions */
   --frog-offset-y-desktop: -80px;
-  --frog-offset-x-desktop: 0px;
-  --wave-offset-y-desktop: 100px;
   --title-offset-y-desktop: 50px;
   --socials-offset-y-desktop: 50px;
 
   /* Mobile Sizes */
   --frog-size-mobile: 300px;
-  --wave-size-mobile: 400px;
   --social-size-mobile: 32px;
 
   /* Mobile Positions */
   --frog-offset-y-mobile: 60px;
-  --wave-offset-y-mobile: 420px;
   --title-offset-y-mobile: 20px;
   --socials-offset-y-mobile: 20px;
 }
 
 @layer utilities {
   .animate-wave {
-    animation: wave 3s ease-in-out infinite;
-    transform-origin: center;
+    animation: hover 4s ease-in-out infinite;
   }
 }
 
-/* Wave animation */
-@keyframes wave {
+/* Hover animation */
+@keyframes hover {
   0% {
-    transform: translate(-50%, 0) scale(1, 1);
-  }
-  25% {
-    transform: translate(-50%, 0) scale(1.05, 0.95);
+    transform: translateY(0);
   }
   50% {
-    transform: translate(-50%, 0) scale(1, 1);
-  }
-  75% {
-    transform: translate(-50%, 0) scale(0.95, 1.05);
+    transform: translateY(-15px);
   }
   100% {
-    transform: translate(-50%, 0) scale(1, 1);
+    transform: translateY(0);
   }
 }
 
@@ -110,11 +98,6 @@ body {
     transform: translateY(var(--frog-offset-y-desktop));
   }
 
-  .wave-container {
-    width: var(--wave-size-desktop);
-    bottom: var(--wave-offset-y-desktop);
-  }
-
   .title-container {
     margin-top: var(--title-offset-y-desktop);
   }
@@ -139,11 +122,6 @@ body {
     width: var(--frog-size-mobile);
     height: var(--frog-size-mobile);
     transform: translateY(var(--frog-offset-y-mobile));
-  }
-
-  .wave-container {
-    width: var(--wave-size-mobile);
-    bottom: var(--wave-offset-y-mobile);
   }
 
   .title-container {

@@ -16,25 +16,13 @@ export default function Home() {
           <h1 className="text-5xl md:text-8xl font-black text-black tracking-normal main-title">JUST A FROH<span className="text-6xl md:text-9xl">.</span></h1>
         </div>
 
-        {/* Frog Image */}
-        <div className="relative z-10 frog-container">
+        {/* Main Frog Image with Animation */}
+        <div className="relative z-10 frog-container animate-wave">
           <Image
-            src="/img/frog.png"
+            src="/img/mainfrog.png"
             alt="FROH Frog"
             width={500}
             height={500}
-            priority
-            className="object-contain"
-          />
-        </div>
-
-        {/* Wave Image */}
-        <div className="absolute left-1/2 -translate-x-1/2 wave-container animate-wave">
-          <Image
-            src="/img/waves.png"
-            alt="Wave Background"
-            width={900}
-            height={300}
             priority
             className="object-contain"
           />
